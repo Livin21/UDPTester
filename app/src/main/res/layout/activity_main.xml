@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/remoteHostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remote_host"/>
+
+    <EditText
+        android:id="@+id/ipEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remoteHostTextView"
+        android:hint="@string/sample_ip"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/portEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ipEditText"
+        android:layout_toEndOf="@id/ipEditText"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/remoteHostTextView"
+        android:hint="@string/sample_port"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipEditText"
+        android:hint="@string/message_here"
+        android:inputType="textLongMessage" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00897b"
+        android:textColor="#fff"
+        android:layout_below="@id/messageEditText"
+        android:text="@string/send_message"/>
+
+
+</RelativeLayout>

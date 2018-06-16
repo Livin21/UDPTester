@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UDP Tester</string>
+    <string name="remote_host">Remote host:</string>
+    <string name="sample_ip">192.168.1.10</string>
+    <string name="sample_port">80</string>
+    <string name="message_here">Message Here</string>
+    <string name="send_message">Send Message</string>
+    <string name="hello_world">Hello World!</string>
+</resources>
